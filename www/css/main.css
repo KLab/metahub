@@ -1,0 +1,308 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #F9F9F9;
+  color: #333333;
+}
+
+div#menu {
+  margin: 0;
+  padding: 0.5em;
+  text-shadow: 0 1px 0 white;
+  background-color: #F3F3F3;
+  background-image: -moz-linear-gradient(#F9F9F9, #F3F3F3);
+  background-image: -webkit-linear-gradient(#F9F9F9, #F3F3F3);
+  background-image: linear-gradient(#F9F9F9, #F3F3F3);
+  background-repeat: repeat-x;
+  border-bottom: 1px solid #E5E5E5;
+}
+
+#menu img.icon {
+  float: left;
+}
+
+#menu ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+#menu ul li {
+  margin: 0;
+  padding: 0;
+  display: inline;
+}
+
+#menu ul li a {
+  padding: 5px;
+  margin-left: 5px;
+  color: #333;
+  font-weight: bold;
+}
+#menu a:hover {
+  color: #4183C4;
+  text-shadow: 0 0 1px rgba(65,131,196,0.4);
+}
+
+
+#foot {
+  margin: 1em 0 0;
+  padding: 0.5em;
+  text-align: right;
+  background-color: transparent;
+  color: #C0C0C0;
+}
+
+#main {
+  padding: 0 5%;
+}
+
+#main h2{
+  padding: 1px 0 5px;
+  border-bottom: 1px solid #C0C0C0;
+}
+
+#main h3 {
+}
+
+#main .top {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 3em;
+}
+#main p.top {
+  margin-bottom: 10em;
+}
+
+#main table {
+  width: 100%;
+  border: 1px #D9D9D9 solid;
+  border-spacing: 0;
+  border-radius: 6px;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  background-image: linear-gradient(#F9F9F9, #F3F3F3);
+  background-image: -moz-linear-gradient(#F9F9F9, #F3F3F3);
+  background-image: -webkit-linear-gradient(#F9F9F9, #F3F3F3);
+  background-repeat: repeat-x;
+  overflow: hidden;
+  text-shadow: 1px 1px 0 white;
+}
+
+#main table tr.head {
+  background-color: #E1E1E1;
+  background-image: linear-gradient(top,#F1F1F1,#E1E1E1);
+  background-image: -moz-linear-gradient(top,#F1F1F1,#E1E1E1);
+  background-image: -webkit-linear-gradient(top,#F1F1F1,#E1E1E1);
+}
+#main table tr.head th {
+  border-bottom: #D7D7D7 1px solid;
+}
+#main table th.left {
+  width: 5em;
+  background-color: #E1E1E1;
+  background-image: linear-gradient(left,#E1E1E1,#F1F1F1);
+  background-image: -moz-linear-gradient(left,#E1E1E1,#F1F1F1);
+  background-image: -webkit-linear-gradient(left,#E1E1E1,#F1F1F1);
+}
+
+#main table th, #main table td {
+  padding: 2px 5px;
+}
+#main table tr.items:hover {
+  background-color: #E1E1E1;
+}
+
+#main form table td input[type=edit] {
+  width: 99%;
+}
+#main form table td textarea {
+  width: 99%;
+  height: 4em;
+}
+
+table.filterlist .filter_id {
+  width: 3em;
+  text-align: center;
+}
+table.filterlist .filter_enable {
+  width: 3em;
+  text-align: center;
+}
+table.filterlist .filter_name {
+  width: 10em;
+}
+table.filterlist .filter_target {
+  width: 8em;
+}
+
+#main span.enable {
+  font-weight: bold;
+  color: green;
+}
+
+table.filterlist tr.disable {
+  color: lightgray;
+}
+
+#main div.alert_block {
+  margin-bottom: 1em;
+  border: 1px #D9D9D9 solid;
+  border-spacing: 0;
+  border-radius: 6px;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  overflow: hidden;
+}
+
+#main div.alert_block div.block_head {
+  margin: 0;
+  padding: 5px;
+  background-color: #E1E1E1;
+  background-image: linear-gradient(top,#F1F1F1,#E1E1E1);
+  background-image: -moz-linear-gradient(top,#F1F1F1,#E1E1E1);
+  background-image: -webkit-linear-gradient(top,#F1F1F1,#E1E1E1);
+  border-bottom: #D9D9D9 1px solid;
+  background-repeat: repeat-x;
+  text-shadow: 0 0px 2px white;
+}
+
+
+#main div.alert_block .block_head ul {
+  margin: 0;
+  padding: 0 10px;
+  list-style-position: inside;
+}
+
+#main div.alert_block .block_head h3 {
+  margin: 0;
+  padding: 5px 1em;
+}
+#main div.alert_block .block_head h3 .number{
+  font-size: smaller;
+}
+
+#main div.alert_block div.block_head ul.info {
+  margin-left: 1em;
+  font-weight: bold;
+  list-style-type: circle;
+}
+#main div.alert_block div.block_head ul.info .tag {
+  font-weight: normal;
+}
+
+#main div.alert_block div.detail {
+  margin: 0;
+  padding: 0.5em;
+  background-color: #F9F9F9;
+  background-image: linear-gradient(#F9F9F9, #F0F0F0);
+  background-image: -moz-linear-gradient(#F9F9F9, #F0F0F0);
+  background-image: -webkit-linear-gradient(#F9F9F9, #F0F0F0);
+  background-repeat: repeat-x;
+}
+
+#main div.alert_block ul.alerts {
+  margin: 0;
+  padding: 0.5em;
+  list-style-type: none;
+}
+
+#main div.alert_block ul.alerts li {
+  display: inline;
+  padding: 2px 10px;
+  background-color: #F0B040;
+  background-image: linear-gradient(#F0D04D, #F0B040);
+  background-image: -moz-linear-gradient(#F0D04D, #F0B040);
+  background-image: -webkit-linear-gradient(#F0D04D, #F0B040);
+  border-radius: 6px;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  font-weight: bold;
+  text-shadow: 0px 1px 1px rgba(255,255,255,0.5);
+}
+
+#main div.alert_block ul.files {
+  margin: 0.5em 2em;
+  padding: 0;
+}
+
+#main div.pager {
+  margin-bottom: 0.5em;
+  text-align: right;
+}
+#main div.pager span, #main div.pager a{
+  font-weight: bold;
+}
+#main div.pager a, #main div.pager a:visited{
+  color: #0044CC;
+}
+#main div.pager form {
+  display: inline;
+  padding-left: 0.5em;
+}
+#main div.pager form input {
+  text-align: right;
+}
+#main div.pager form input[type="text"] {
+  border: 1px solid #D9D9D9;
+}
+#main div.pager form input[type="submit"] {
+  display: none;
+}
+
+#main div.pager .next {
+  background-image: url(/images/arrow_r.png);
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: 0;
+  padding: 8px;
+  vertical-align: super;
+  font-size: 0;
+}
+#main div.pager .prev {
+  background-image: url(/images/arrow_l.png);
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: 0;
+  padding: 8px;
+  vertical-align: super;
+  font-size: 0;
+}
+
+#main ul.repolist {
+  margin: 0;
+  padding: 0 1em;
+  list-style-type: none;
+  font-size: smaller;
+}
+#main ul.repolist li {
+  display: inline;
+  margin: 0;
+  padding: 0 3px 0 2px;
+  border-right: solid 1px lightgray;
+}
+#main ul.repolist li.current a {
+  background-color: lightgray;
+}
+#main ul.repolist li.add {
+  border-right: 0;
+}
+#main ul.repolist li.return {
+  border-right: 0;
+}
+
+#main .return_link {
+  font-size: smaller;
+}
+
+#main h3.repoinfo {
+  mergin: 1em 1em 0;
+}
+#main p.repoinfo {
+  padding: 0 1em;
+}
+#main p.repoinfo a.edit{
+  font-size: smaller;
+}
+
