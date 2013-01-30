@@ -146,7 +146,7 @@ table.filterlist tr.disable {
   color: lightgray;
 }
 
-#main div.alert_block {
+#main div.alert_block, #main div.file_block {
   margin-bottom: 1em;
   border: 1px #D9D9D9 solid;
   border-spacing: 0;
@@ -156,7 +156,7 @@ table.filterlist tr.disable {
   overflow: hidden;
 }
 
-#main div.alert_block div.block_head {
+#main div.block_head {
   margin: 0;
   padding: 5px;
   background-color: #E1E1E1;
@@ -169,13 +169,13 @@ table.filterlist tr.disable {
 }
 
 
-#main div.alert_block .block_head ul {
+#main .block_head ul {
   margin: 0;
   padding: 0 10px;
   list-style-position: inside;
 }
 
-#main div.alert_block .block_head h3 {
+#main .block_head h3 {
   margin: 0;
   padding: 5px 1em;
 }
@@ -192,7 +192,13 @@ table.filterlist tr.disable {
   font-weight: normal;
 }
 
-#main div.alert_block div.detail {
+#main div.alert_block div.block_head .view_link {
+  font-size: smaller;
+  text-align: right;
+  margin-top: -1em;
+}
+
+#main div.detail {
   margin: 0;
   padding: 0.5em;
   background-color: #F9F9F9;
@@ -225,6 +231,40 @@ table.filterlist tr.disable {
 #main div.alert_block ul.files {
   margin: 0.5em 2em;
   padding: 0;
+}
+
+#main div.alert_block .detail .description {
+  margin: 0.5em 2em;
+  padding: 0;
+}
+#main div.alert_block .detail h4 {
+  margin-bottom: 0;
+}
+#main div.alert_block .detail .comments {
+  margin: 0.5em 2em;
+  padding: 0;
+}
+#main div.alert_block .detail ul.comments {
+  list-style-type: none;
+  list-style-position: inside;
+}
+#main div.alert_block .detail .comments li {
+  margin: 0.3em;
+  padding: 0.3em;
+  border-bottom: dotted 1px black;
+}
+#main div.alert_block .detail .comments li:last-child {
+  border-bottom: 0;
+}
+#main div.alert_block .comments .user {
+  white-space: nowrap;
+  font-weight: bolder;
+}
+#main div.alert_block .comments .user img {
+  vertical-align: bottom;
+}
+#main div.file_block .detail {
+  font-size: small;
 }
 
 #main div.pager {
