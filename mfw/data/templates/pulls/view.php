@@ -31,6 +31,13 @@ if(!$returl){
 </div>
 
 <div class="detail">
+<?php if(isset($alert_filters[null])):?>
+<ul class="alerts">
+<?php foreach($alert_filters[null] as $f):?>
+  <li><?=$f->getName()?></li>
+<?php endforeach?>
+</ul>
+<?php endif?>
 <div class="description">
 <?=$rawpull['body']?htmlspecialchars($rawpull['body']):'No description given.'?>
 </div>
@@ -44,6 +51,9 @@ if(!$returl){
       <img src="<?=$comment['user']['avatar_url']?>" width="16" height="16">
       <?=htmlspecialchars($comment['user']['login'])?>
     </span>
+    <?php if(isset($comment['path'])):?>
+    <br><span class="path">(<?=htmlspecialchars($comment['path'])?>)</span>
+    <?php endif?>
   </li>
 <?php endforeach?>
 </ul>
@@ -57,9 +67,19 @@ if(!$returl){
 <h3><?=$file['filename']?></h3>
 </div>
 <div class="detail">
+
+<?php if(isset($alert_filters[$file['filename']])):?>
+<ul class="alerts">
+<?php foreach($alert_filters[$file['filename']] as $f):?>
+  <li><?=$f->getName()?></li>
+<?php endforeach?>
+</ul>
+<?php endif?>
+<div class="code">
 <pre class="brush: php">
-<?=preg_replace('/(^|\n)(@@ [^@]* @@)/',"$1$2\n",$file['patch'])?>
+<?=htmlspecialchars(preg_replace('/(^|\n)(@@ [^@]* @@)/',"$1$2\n",$file['patch']))?>
 </pre>
+</div>
 </div>
 </div>
 <?php endforeach?>

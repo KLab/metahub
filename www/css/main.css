@@ -208,13 +208,13 @@ table.filterlist tr.disable {
   background-repeat: repeat-x;
 }
 
-#main div.alert_block ul.alerts {
+#main .detail ul.alerts {
   margin: 0;
   padding: 0.5em;
   list-style-type: none;
 }
 
-#main div.alert_block ul.alerts li {
+#main .detail ul.alerts li {
   display: inline;
   padding: 2px 10px;
   background-color: #F0B040;
@@ -256,6 +256,9 @@ table.filterlist tr.disable {
 #main div.alert_block .detail .comments li:last-child {
   border-bottom: 0;
 }
+#main div.alert_block .comments .path {
+  font-size: smaller;
+}
 #main div.alert_block .comments .user {
   white-space: nowrap;
   font-weight: bolder;
@@ -263,8 +266,13 @@ table.filterlist tr.disable {
 #main div.alert_block .comments .user img {
   vertical-align: bottom;
 }
-#main div.file_block .detail {
+#main div.file_block .code {
   font-size: small;
+  padding: 0 1em;
+}
+#main div.file_block .code .php {
+  padding: 1px;
+  border: 1px lightgray solid;
 }
 
 #main div.pager {

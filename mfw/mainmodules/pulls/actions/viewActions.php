@@ -18,12 +18,20 @@ class viewActions extends pullsActions {
 		$comments = Github::getPullRequestComments($repo->getName(),$pull->getNumber());
 		$files = Github::getPullRequestFiles($repo->getName(),$pull->getNumber());
 
+		$alerts = PullRequestAlertDb::selectByPullRequest($pull);
+		$filters = FilterDb::selectAll();
+		$alert_filters = array();
+		foreach($alerts as $a){
+			$alert_filters[$a->getFileName()][] = $filters[$a->getFilterId()];
+		}
+
 		$params = array(
 			'rawpull' => $rawpull,
 			'comments' => $comments,
 			'files' => $files,
 			'pull' => $pull,
 			'repo' => $repo,
+			'alert_filters' => $alert_filters,
 			);
 		return $this->build($params);
 	}
