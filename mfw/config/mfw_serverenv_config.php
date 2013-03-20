@@ -11,7 +11,10 @@ $serverenv_config = array(
 			'host' => '127.0.0.1',
 			'port' => 10080,
 			),
-
+		'memcache' => array(
+			'host' => 'localhost',
+			'port' => 11211,
+			),
 		),
 	);
 
